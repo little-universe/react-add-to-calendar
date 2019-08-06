@@ -95,7 +95,7 @@
     "start": "node server.js",
     "test": "NODE_ENV=test grunt travis",
     "eslint": "eslint **/*.js",
-    "prepublish": "npm install && npm run build",
+    "prepare": "npm install && npm run build",
     "codecov": "cat coverage/*/lcov.info | ./node_modules/codecov/bin/codecov"
   }
 }
