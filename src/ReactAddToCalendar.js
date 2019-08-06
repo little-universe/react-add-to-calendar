@@ -80,7 +80,7 @@ export default class ReactAddToCalendar extends React.Component {
       window.open(url, "_blank");
     }
 
-    this.toggleCalendarDropdown();
+    this.props.afterClick();
   }
 
   renderDropdown() {
@@ -196,6 +196,7 @@ export default class ReactAddToCalendar extends React.Component {
 ReactAddToCalendar.displayName = "Add To Calendar";
 
 ReactAddToCalendar.propTypes = {
+  afterClick: PropTypes.func,
   buttonClassClosed: PropTypes.string,
   buttonClassOpen: PropTypes.string,
   buttonLabel: PropTypes.string,
@@ -218,6 +219,7 @@ ReactAddToCalendar.propTypes = {
 };
 
 ReactAddToCalendar.defaultProps = {
+  afterClick: () => {}
   buttonClassClosed: "react-add-to-calendar__button",
   buttonClassOpen: "react-add-to-calendar__button--light",
   buttonLabel: "Add to My Calendar",
