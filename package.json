@@ -15,7 +15,7 @@
   },
   "main": "dist/react-add-to-calendar.min.js",
   "style": "dist/react-add-to-calendar.min.css",
-  "files": ["*.md", "dist", "lib"],
+  "files": ["*.md", "dist", "lib", "src", "gruntfile"],
   "keywords": [
     "react",
     "add-to-calendar",
